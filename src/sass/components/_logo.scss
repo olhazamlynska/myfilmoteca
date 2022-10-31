@@ -1,0 +1,34 @@
+.header-logo {
+  display: block;
+}
+
+.header-logo__link {
+  width: 100%;
+  transition: text-shadow $transition-duration $transition-animation,
+    filter $transition-duration $transition-animation;
+}
+.header-logo__link:hover,
+.header-logo__link:focus {
+  text-shadow: 1px 1px 2px $color-accent-secondary, 0 0 1em $color-text-light,
+    0 0 0.2em $color-text-lighter;
+}
+.header-logo__link:hover .header-logo__icon,
+.header-logo__link:focus .header-logo__icon {
+  filter: drop-shadow(0 0 0.2em $color-accent-secondary);
+}
+.header-logo__icon {
+  fill: transparent;
+  stroke: $color-text-lighter;
+}
+.header-logo__text {
+  display: none;
+  @include bigmobile {
+    display: inline;
+    margin-left: 8px;
+    font-size: 30px;
+    line-height: 1.17;
+    align-items: center;
+    text-align: center;
+    color: $color-text-lighter;
+  }
+}
