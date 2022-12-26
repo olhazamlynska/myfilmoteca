@@ -1,7 +1,14 @@
-@mixin font($fs: $font-size, $fw: $font-weight, $lh: $line-height) {
+@mixin centeredFlex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin font($fs: $font-size, $lh: $line-height, $fw: normal, $ls: null) {
   font-size: $fs;
   font-weight: $fw;
   line-height: $lh;
+  letter-spacing: $ls;
 }
 
 @mixin mobile {
@@ -30,17 +37,10 @@
   }
 }
 
-@mixin retina2x {
+@mixin retina {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    @content;
-  }
-}
-@mixin retina3x {
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
     @content;
   }
 }

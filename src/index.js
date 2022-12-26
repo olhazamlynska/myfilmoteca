@@ -1,39 +1,35 @@
-import './sass/index.scss';
+import { spinnerPlay, spinnerStop } from './js/spinner';
+import { renderTrendingMovies } from './js/API/get-trending';
+
+import { renderModalMovie } from './js/API/get-movie-info';
+
+import { onFormSubmit } from './js/gallery';
+import { openModalTeam } from './js/open-modal-team';
+
+import './js/switch-bg-theme';
+
+import { scrollFunction } from './js/button-up';
+import { refs } from './js/refs';
+
 import Cookies from 'js-cookie';
-const COOKIE_NAME = 'cookie';
-const expires = new Date(new Date().getTime() + 15 * 60 * 1000);
 
-function createMarkup() {
-  return `<div class="cookies js-cookies">
-  <div class="cookies__header">
-    <h3 class="cookies__title">Cookies Policy</h3>
-  </div>
-  <div class="cookies__body">
-    <p class="cookies__text">
-      We use cookies for improving user experience, analytics and marketing.
-      <a class="cookies__link" href="#">Privacy Policy</a>
-    </p>
-    <button class=" cookies__btn js-cookies-accept">Accept!</button>
-  </div>
-</div>`;
-}
+import {
+  createMarkupCookies,
+  COOKIE_NAME,
+  expires,
+  cookies,
+} from './js/cookies';
 
-if (!Cookies.get(COOKIE_NAME)) {
-  document
-    .querySelector('body')
-    .insertAdjacentHTML('beforeend', createMarkup());
+import { onCliсkBtnWatchGallery } from './js/API/get-movie-trailer';
 
-  const cookieAlert = document.querySelector('.js-cookies');
+///Запуск спінера при завантаженні
+spinnerPlay();
+window.addEventListener('load', function (e) {
+  spinnerStop();
+});
+///Закінчення спінера при завантаженні
 
-  const cookieBtn = document.querySelector('.js-cookies-accept');
+///Запуск кнопки вверх при скролі
+window.addEventListener('scroll', scrollFunction);
 
-  setTimeout(() => cookieAlert.classList.add('is-shown'), 1000);
-
-  cookieBtn.addEventListener('click', onAcceptBtnClick);
-
-  function onAcceptBtnClick(e) {
-    cookieAlert.classList.remove('is-shown');
-    setTimeout(() => cookieAlert.remove(), 1000);
-    Cookies.set(COOKIE_NAME, true, { expires: expires });
-  }
-}
+refs.galleryMovies.addEventListener('click', onCliсkBtnWatchGallery);
