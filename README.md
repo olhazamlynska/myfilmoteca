@@ -1,99 +1,112 @@
-# Parcel template
+<a name="readme-top"></a>
 
-Этот проект был создан при помощи Parcel. Для знакомства и настройки
-дополнительных возможностей [обратись к документации](https://parceljs.org/).
+<div align="center">
+  <h3><b>Filmoteca</b></h3>
+</div>
 
-## Подготовка нового проекта
+<!-- TABLE OF CONTENTS -->
 
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Склонируй этот репозиторий.
-3. Измени имя папки с `parcel-project-template` на имя своего проекта.
-4. Создай новый пустой репозиторий на GitHub.
-5. Открой проект в VSCode, запусти терминал и свяжи проект с GitHub-репозиторием
-   [по инструкции](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
-6. Установи зависимости проекта в терминале командой `npm install` .
-7. Запусти режим разработки, выполнив команду `npm start`.
-8. Перейди в браузере по адресу [http://localhost:1234](http://localhost:1234).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
+# 📗 Table of Contents
 
-## Файлы и папки
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+- [👥 Authors](#authors)
+- [🙏 Contact Information](#contact-information)
 
-- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
-  файлы стилей страниц. Например, для `index.html` файл стилей называется
-  `index.scss`.
-- Изображения добавляй в папку `src/images`. Сборщик оптимизирует их, но только
-  при деплое продакшн версии проекта. Все это происходит в облаке, чтобы не
-  нагружать твой компьютер, так как на слабых машинах это может занять много
-  времени.
+<!-- PROJECT DESCRIPTION -->
 
-## Деплой
+# 📖 Filmoteca <a name="about-project"></a>
 
-Для настройки деплоя проекта необходимо выполнить несколько дополнительных шагов
-по настройке твоего репозитория. Зайди во вкладку `Settings` и в подсекции
-`Actions` выбери выбери пункт `General`.
+**Filmoteca** is a website designed for movie lovers to search movies based on
+keywords, watch and create create your own library of watched movies or movies
+to watch, view movie details, trailers.
 
-![GitHub actions settings](./assets/actions-config-step-1.png)
+## 🛠 Built With <a name="built-with"></a>
 
-Пролистай страницу до последней секции, в которой убедись что выбраны опции как
-на следующем изображении и нажми `Save`. Без этих настроек у сборки будет
-недостаточно прав для автоматизации процесса деплоя.
+### Tech Stack <a name="tech-stack"></a>
 
-![GitHub actions settings](./assets/actions-config-step-2.png)
+  <p>Technologies</p>
+  <ul>
+    <li><a href="https://html.spec.whatwg.org/multipage/">HTML</a></li>
+    <li><a href="https://ru.wikipedia.org/wiki/CSS">CSS</a></li>
+    <li><a href="http://sass-lang.com/">SASS</a></li>
+    <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">JS</a></li>
+    <li><a href="https://axios-http.com/">Axios</a></li>
+    <li><a href="https://spin.js.org/">Spin.js</a></li>
+  </ul>
 
-Продакшн версия проекта будет автоматически собираться и деплоиться на GitHub
-Pages, в ветку `gh-pages`, каждый раз когда обновляется ветка `main`. Например,
-после прямого пуша или принятого пул-реквеста. Для этого необходимо в файле
-`package.json` отредактировать поле `homepage` и скрипт `build`, заменив
-`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
+<!-- LIVE DEMO -->
 
-```json
-"homepage": "https://your_username.github.io/your_repo_name/",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /your_repo_name/"
-},
-```
+## 🚀 Live Demo <a name="live-demo"></a>
 
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
+- [Live Demo Link](https://olhazamlynska.github.io/myfilmoteca/)
 
-![GitHub Pages settings](./assets/repo-settings.png)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Статус деплоя
+<!-- GETTING STARTED -->
 
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
+## 💻 Getting Started <a name="getting-started"></a>
 
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
+### Setup
 
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
+Clone this repository to your desired folder:
 
-![Deployment status](./assets/status.png)
+- [ ] Navigate to the directory where you want to download the project.
+- [ ] Or open a terminal in this directory and run the command
+      `git clone https://github.com/olhazamlynska/myfilmoteca/`
 
-### Живая страница
+### Install
 
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
+Change into the projectdirectory: `cd myfilmoteca`, then:
 
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение свойства `homepage` или скрипта `build` в
-файле `package.json`.
+- [ ] Install the dependencies: `npm install`
 
-## Как это работает
+### Usage
 
-![How it works](./assets/how-it-works.png)
+To run the project, execute the following command:
 
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+- [ ] Start the development server: `npm start`
+- [ ] Open your browser and visit `http://localhost:1234` to view the
+      application.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+- 👤 [**Team Lead:** Iryna Makovoz](https://github.com/IreneCreadora)
+
+- 👤
+  [**Scrum master** & **Front-end developer**: Olha Zamlynska](https://github.com/olhazamlynska)
+
+- 👤 [**Main developer**: Anna Lisitsyna](https://github.com/lisitsyna-anna)
+
+- 👤 [**Front-end developer**: Bohdan Orlovskyi](https://github.com/Bohdan100)
+
+- 👤
+  [**Front-end developer**: Yuliia Tymchuk](https://github.com/yuliia-tymchuk)
+
+- 👤
+  [**Front-end developer**: Volodymyr Tymoshchuk](https://github.com/Vobzilla)
+
+- 👤
+  [**Front-end developer**: Sofiia Korostenska](https://github.com/SofiiaKorost)
+
+- 👤 [**Front-end developer**: Mykola Zaikovskyi](https://github.com/mykola1982)
+
+- 👤 [**Front-end developer**: Nelia Bochenkova](https://github.com/Nelia95)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Contact Information <a name="contact-information"></a>
+
+If you have any questions or feedback, please feel free to contact me:
+
+[Olha Zamlynska](mailto:olyazamlynska@gmail.com)
