@@ -23,9 +23,7 @@
 
 # 📖 Filmoteca <a name="about-project"></a>
 
-**Filmoteca** is a website designed for movie lovers to search movies based on
-keywords, watch and create create your own library of watched movies or movies
-to watch, view movie details, trailers.
+**Filmoteca** is a user-friendly platform offering trending movies, advanced search functionality based on keywords, detailed movie information, trailers, and personalized libraries for users to track watched movies and movies they plan to watch.
 
 ## 🛠 Built With <a name="built-with"></a>
 
