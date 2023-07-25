@@ -107,4 +107,4 @@ To run the project, execute the following command:
 
 If you have any questions or feedback, please feel free to contact me:
 
-[Olha Zamlynska](mailto:olyazamlynska@gmail.com)
+[Olha Zamlynska](mailto:olhazamlynska@gmail.com)
